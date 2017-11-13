@@ -3,7 +3,7 @@
 <!--
 MIT License
 
-Copyright (c) [year] [fullname]
+Copyright (c) 2017 Lukas Wais
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -39,21 +39,24 @@ SOFTWARE.
     <form action="subscription.php" method="post" class="w3-margin w3-container w3-animate-left" id="subscription"
           style="height: 80%">
 
-        <p>Forename <br/><input type="text" name="forename" id="forename" class="w3-input w3-border w3-round"/>
+        <p>Forename <br/><input type="text" name="forename" id="forename" class="w3-input w3-border w3-round" required/>
         </p>
-        <p>Surname <br/><input type="text" name="surname" id="surname" class="w3-input w3-border w3-round"/>
+        <p>Surname <br/><input type="text" name="surname" id="surname" class="w3-input w3-border w3-round" required/>
         </p>
-        <p>Domicile <br/><input type="text" name="domicile" id="domicile" class="w3-input w3-border w3-round"/>
+        <p>Domicile <br/><input type="text" name="domicile" id="domicile" class="w3-input w3-border w3-round" required/>
         </p>
         <p>Postcode <br/><input type="number" name="postcode" id="postcode"
-                                class="w3-input w3-border w3-round"/>
+                                class="w3-input w3-border w3-round" required/>
         </p>
-        <p>Street <br/><input type="text" name="street" id="street" class="w3-input w3-border w3-round"/></p>
+        <p>Street <br/><input type="text" name="street" id="street" class="w3-input w3-border w3-round" required/></p>
         <p>House number <br/><input type="text" name="houseNumber" id="houseNumber"
-                                    class="w3-input w3-border w3-round"/>
+                                    class="w3-input w3-border w3-round" required/>
         </p>
-        <p>Birthday <br/><input type="date" name="birthday" id="birthday" class="w3-input w3-border w3-round">
+        <p>Birthday <br/><input type="date" name="birthday" id="birthday" class="w3-input w3-border w3-round" required>
         </p>
+
+        <p>I accept the license agreements <br/><input class="w3-check" type="checkbox" required>
+            <label>yes</label></p>
 
         <input type="submit" value="submit" class=" w3-block w3-large w3-black"/>
         
